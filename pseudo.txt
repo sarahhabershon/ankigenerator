@@ -1,0 +1,11 @@
+1. csv file input must match certain conditions:
+    a. it can have 2 or 3 columns
+    b. one of those columns must be labeled 'a', the others 'q' and/or 'img'
+    c. if it has an image filepath, this must match the answer string but with file extension .jpg, but with spaces and punctuation stripped out.
+
+    q,a,img
+    'What is the word?','burd is the wurd','burdisthewurd.jpg'
+
+
+2. read in source csvs, apply a function to identify which model they need by counting colnames and checking for the .jpg file extension, put them into a list of lists i.e. [[birds, image][vocab, text]]
+3. 
