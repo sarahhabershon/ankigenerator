@@ -73,13 +73,9 @@ with open('nz_text_cards.csv', encoding='utf-8') as csvfile:
         nz_deck.add_note(second_note)
         # print(my_note.fields)
 
-
-
 deck_package = genanki.Package(nz_deck)
 media_filepaths = "images/" + pd.read_csv('nz_birds.csv')["img_name"]
 deck_package.media_files = media_filepaths.tolist()
 print(deck_package.media_files)
-
-
 
 deck_package.write_to_file('nz.apkg')
